@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-
+    
+    
     
 `
 
@@ -10,6 +11,19 @@ export const AboutContainer = styled.div`
     display: grid;
     grid-template-columns: 35% 50%;
     gap: 15%;
+
+    /*  RESPONSIVE */
+
+    /*--- Media queries (medium devices) ---*/
+    @media screen and (max-width: 1024px){
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    /*--- Media queries (small devices) ---*/
+    @media screen and (max-width: 600) {
+        
+    }
 `
 
 export const AboutMe = styled.div`
@@ -21,8 +35,22 @@ export const AboutMe = styled.div`
         var(--color-primary),
         transparent
     );
+
     display: grid;
     place-items: center;
+
+    /*  RESPONSIVE */
+
+    /*--- Media queries (medium devices) ---*/
+    @media screen and (max-width: 1024px){
+        width: 50%;
+        margin: 2rem auto 4rem;
+    }
+    /*--- Media queries (small devices) ---*/
+    @media screen and (max-width: 600) {
+        width: 65%;
+        margin: 0 auto 3rem;
+    }
 
 `
 
@@ -37,10 +65,43 @@ export const AboutMeImg = styled.div`
     }
 `
 
+export const AboutContent = styled.div`
+    text-align: center;
+    
+    p {
+        margin: 2rem 0 2.6rem;
+        color: var(--color-light)
+    }
+
+    /*  RESPONSIVE */
+
+    /*--- Media queries (medium devices) ---*/
+    @media screen and (max-width: 1024px){
+        
+        
+        p {
+            margin: 1rem;
+        }
+    }
+    /*--- Media queries (small devices) ---*/
+    @media screen and (max-width: 600) {
+        div {
+            display: flex;
+            flex-direction: column;
+            
+            color: green;
+        }
+        
+        p {
+            margin: 1.5rem 0;
+        }
+    }
+`
+
 export const AboutCards = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 1rem;
 
     article {
         background: var(--color-bg-variant);
@@ -55,6 +116,35 @@ export const AboutCards = styled.div`
         background: transparent;
         border-color: var(--color-primary-variant);
         cursor: default;
+    }
+
+    .about__icon {
+        color: var(--color-primary);
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    h5 {
+        font-size: 0.95rem;
+
+    }
+
+    small {
+        font-size: 0.7rem;
+        color: var(--color-light)
+    }
+
+
+    /*  RESPONSIVE */
+
+    /*--- Media queries (medium devices) ---*/
+    @media screen and (max-width: 1024px){
+        
+    }
+    /*--- Media queries (small devices) ---*/
+    @media screen and (max-width: 600) {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
     }
     
 `
