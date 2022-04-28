@@ -47,7 +47,7 @@ export const AboutMe = styled.div`
         margin: 2rem auto 4rem;
     }
     /*--- Media queries (small devices) ---*/
-    @media screen and (max-width: 600) {
+    @media screen and (max-width: 600px) {
         width: 65%;
         margin: 0 auto 3rem;
     }

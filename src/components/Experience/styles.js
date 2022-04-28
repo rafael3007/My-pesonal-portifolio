@@ -86,10 +86,7 @@ export const ExperienceContent = styled.div`
         padding: 1rem;
     }
 
-    /*--- Media queries (small devices) ---*/
-    @media screen and (max-width: 600) {
-        
-    }
+    
 
 `
 

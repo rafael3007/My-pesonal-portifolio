@@ -42,7 +42,7 @@ const Head = styled.header`
     }
 
     /*--- Media queries (small devices) ---*/
-    @media screen and (max-width: 600) {
+    @media screen and (max-width: 600px) {
         .head {
             height: 100vh;
         }
