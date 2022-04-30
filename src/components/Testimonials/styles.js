@@ -1,27 +1,22 @@
 import styled from "styled-components";
 
 export const TestimonialsSection = styled.section`
-
-`
-
-export const TestimonialsContainer = styled.div`
-    width: 40%;
-    
-    @media screen and (max-width: 1024px) {
-        width:60%;
+    .testimonials__container {
+        width: 40%;
+        padding-bottom: 4rem;
     }
 
-    @media screen and (max-width: 600px) {
-        width: var(--container-width-sm);
+    .swiper-pagination-clickable .swiper-pagination-bullet {
+        background: var(--color-primary);
     }
-`
 
-export const Testimonial = styled.article`
-    background: var(--color-bg-variant);
-    text-align: center;
-    padding: 2rem;
-    border-radius: 2rem;
-    user-select: none;
+    .testimonial {
+        background: var(--color-bg-variant);
+        text-align: center;
+        padding: 2rem;
+        border-radius: 2rem;
+        user-select: none;
+    }
 
     small {
         color: var(--color-light);
@@ -31,14 +26,27 @@ export const Testimonial = styled.article`
         margin: 0.8rem auto 0;
     }
 
+
+
     @media screen and (max-width: 1024px) {
-        
+
+        .testimonials__container{
+            width:60%;
+        }
+       
     }
 
     @media screen and (max-width: 600px) {
-        width: var(--container-width-sm);
+        .testimonials__container {
+            width: var(--container-width-sm);
+        }
+
+        .testimonial {
+            width: var(--container-width-sm);
+        }
     }
 `
+
 
 export const ClientAvatar = styled.div`
     width: 4rem;
