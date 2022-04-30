@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <Head className='head'>
       <div className="container header__container">
-        <h5>Heloow I'm</h5>
+        <h5>Olá, Eu sou</h5>
         <h1>Rafael Brito</h1>
         <h5 className="text-light">
           FullStack Developer

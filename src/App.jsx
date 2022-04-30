@@ -18,9 +18,9 @@ export const App = () => {
             <Nav />
             <About/>
             <Experience/>
-            <Services/>
+            {/*<Services/>*/}
             <Portifolio/>
-            <Testimonials />
+            {/*<Testimonials />*/}
             <Contact />
             <Footer />
 
